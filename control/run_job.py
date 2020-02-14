@@ -63,7 +63,8 @@ def run_simulation(parameters, job_uuid, n_events):
     #           "/ship/run_simulation.sh {} {} {}".\
     #           format(",".join(map(str, magnet_config)), n_events, first_event)
     #TODO dummy formatting
-    command = "/bin/bash -c 'source /calo/setup.sh; /calo/run_simulation.sh {} {}'".format("10", "20")
+    command = "/bin/bash -c 'source /calo/setup.sh;" \
+              "/calo/run_simulation.sh {} {}'".format(",".join(map(str, parameters)), n_events)
     result = {
         'uuid': None,
         'container_id': None,

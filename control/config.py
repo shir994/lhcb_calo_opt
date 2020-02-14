@@ -4,7 +4,7 @@
 # parameters of server
 HOST = '0.0.0.0'
 PORT = '5432'
-HOST_DIRECTORY = '/mnt/shirobokov/calo_data'
+HOST_DIRECTORY = '/mnt/sshirobokov/calo_data'
 CONTAINER_DIRECTORY = '/temp'
 # DOCKER_ABS_PATH_AT_HOST = "/home/shirobokov/data/SHIP/"
 
